@@ -6,11 +6,11 @@ export async function handler(event) {
     const resp = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-        "HTTP-Referer": event.headers?.host ? `https://${event.headers.host}` : undefined,
-        "X-Title": "AI Prompt Assistant Vite Pro"
-      },
+  "Authorization": `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
+  "Content-Type": "application/json",
+  "HTTP-Referer": "http://localhost:5173",
+  "X-Title": "AI Prompt Assistant"
+},
       body: JSON.stringify({ model, messages, temperature, max_tokens })
     });
     const data = await resp.json();
