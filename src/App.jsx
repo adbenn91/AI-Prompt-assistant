@@ -41,9 +41,9 @@ function buildPrompt(d){
 
 const PROVIDERS = [
   { id:"openrouter", label:"OpenRouter", models:[
-    { id:"mistralai/mistral-small", label:"Mistral Small (fast)" },
-    { id:"qwen/qwen-2.5-7b-instruct", label:"Qwen 2.5 7B Instruct" },
-    { id:"meta-llama/llama-3.1-70b-instruct", label:"LLaMA 3.1 70B Instruct" },
+    { id:"mistralai/mistral-small-3.2-24b-instruct:free", label:"Mistral: Mistral Small 3.2 24B (free)" },
+    { id:"openai/gpt-oss-20b:free", label:"OpenAI: gpt-oss-20b (free)" },
+    { id:"deepseek/deepseek-r1-0528:free", label:"DeepSeek: R1 0528 (free)" },
   ]},
 ];
 
@@ -119,8 +119,7 @@ export default function App(){
         <div className="brand">
           <div className="logo">✨</div>
           <div>
-            <div className="title">AI Prompt Assistant — Vite Pro</div>
-            <div className="sub">Templates → Optimized Prompt → Generate via OpenRouter</div>
+            <div className="title">AI Prompt Assistant</div>
           </div>
         </div>
         <div className="toolbar">
