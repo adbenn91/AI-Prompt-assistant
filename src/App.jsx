@@ -117,7 +117,7 @@ export default function App(){
     <div className={sidebarOpen ? "" : "sidebar-collapsed"}>
       <header className="header">
         <div className="brand">
-          <div className="logo">✨</div>
+          <div className="logo">🤖</div>
           <div>
             <div className="title">AI Prompt Assistant</div>
           </div>
